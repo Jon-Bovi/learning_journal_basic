@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>New Learning Journal Entry</title>
+    <meta name="description" content="Daily Learning Journal New Entry Form">
+    <meta name="author" content="Ford Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/vendor/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendor/css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header container">
+        <div class="row">
+            <header>
+                <ul>
+                    <li><a href="index.html"><h3>today I learned ...</h3></a></li>
+                    <li id="newentry"><a href="create.html">Add new entry</a></li>
+                </ul>
+            </header>
+        </div>
+    </div>
+    <div class="form container">
+        <div class="row">
+            <h4></h4>
+            <form action="make_new_entry.py">
+                <input type="text" name="Title" placeholder="Title"><br>
+                <textarea placeholder="What did I learn today?"></textarea><br>
+                <input id="submit_button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

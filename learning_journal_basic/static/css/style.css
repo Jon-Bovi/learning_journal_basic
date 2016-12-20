@@ -1,0 +1,132 @@
+/*base*/
+
+html, body {
+    background-color: #6090a5;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    color: #708090;
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 10px;
+    width: 100vw;
+    background-color: #333;
+    margin: 0;
+    margin-right: 0;
+    max-width: 100vw;
+    height: 70px;
+}
+
+.header ul {
+    margin: 0;
+}
+
+article {
+    display: block;
+    background-color: #e0e5ed;
+    border-radius: 5px;
+    border: 5px solid #ababbb;
+    min-height: 136px;
+    padding: 17px;
+}
+
+.entries {
+    margin-top: 20px;
+}
+
+.entries .row  {
+    height: 180px;
+    margin-top: 10px;
+}
+
+.row .column {
+
+}
+
+.one-half.column {
+    height: 180px;
+    width: 44%;
+}
+
+.date {
+    color: #9b9bab;
+    margin-bottom: 20px;
+}
+
+h4, h6 {
+    margin: 0;
+}
+
+h4 {
+    color: #568;
+    text-align: center;
+}
+
+a h4:hover {
+    color: #87c;
+}
+
+.header h3 {
+    margin: 0;
+    margin-right: 40px;
+    color: #ddd;
+}
+
+#newentry {
+    float: right;
+    margin-top: 13px;
+}
+
+header {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+article p {
+    margin: 8px 0;
+}
+
+textarea {
+    min-width: 60vw;
+    min-height: 200px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+#submit_button {
+    background-color: white;
+}
+
+.latest article {
+    height: 30vh;
+    max-height: 400px;
+    background-color: #e0e5ed;
+    border-color: #444;
+}
+
+.latest article h4 {
+    position: relative;
+}
+
+.latest article .date {
+    margin-bottom: 30px;
+}
+
+.latest {
+    margin: 20px auto;
+}
