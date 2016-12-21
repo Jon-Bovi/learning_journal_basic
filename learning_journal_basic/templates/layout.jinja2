@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Default{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/vendor/css/normalize.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/vendor/css/skeleton.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/css/style.css')}}">
+    <meta charset="utf-8">
+    <title>{% block title %}Learning Journal{% endblock %}</title>
+    <meta name="description" content="Daily Learning Journal New Entry Form">
+    <meta name="author" content="Ford Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/vendor/css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/vendor/css/skeleton.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/css/style.css') }}">
 </head>
 <body>
-    {% if header %}
-    <header>{% block header %}
-    <nav>
-        <a href="{{ request.route_url('home') }}"><h2>
-            today I learned...
-        </h2></a>
-    </nav>
-    {% endblock %}</header>
-    {% endif %}
+    <div class="header container">
+        <div class="row">
+            <header>
+                <ul>
+                    <li><a href="{{ request.route_url('home') }}"><h3>today I learned ...</h3></a></li>
+                    <li id="newentry"><a href="{{ request.route_url('create') }}">Add new entry</a></li>
+                </ul>
+            </header>
+        </div>
+    </div>
     {% block body %}{% endblock %}
 </body>
 </html>
