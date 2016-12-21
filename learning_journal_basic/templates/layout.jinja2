@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Default{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/vendor/css/normalize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/vendor/css/skeleton.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ request.static_path('learning_journal_basic:static/css/style.css')}}">
+</head>
+<body>
+    {% if header %}
+    <header>{% block header %}
+    <nav>
+        <a href="{{ request.route_url('home') }}"><h2>
+            today I learned...
+        </h2></a>
+    </nav>
+    {% endblock %}</header>
+    {% endif %}
+    {% block body %}{% endblock %}
+</body>
+</html>
