@@ -21,7 +21,7 @@ def home(request):
 def detail(request):
     """Detail view handler."""
     idx = len(ENTRIES) - int(request.matchdict['id'])
-    if idx > 0:
+    if idx >= 0:
         return ENTRIES[len(ENTRIES) - int(request.matchdict['id'])]
     raise exc.HTTPNotFound()
 
@@ -30,7 +30,7 @@ def detail(request):
 def update(request):
     """Update/edit view handler."""
     idx = len(ENTRIES) - int(request.matchdict['id'])
-    if idx > 0:
+    if idx >= 0:
         return ENTRIES[len(ENTRIES) - int(request.matchdict['id'])]
     raise exc.HTTPNotFound()
 
