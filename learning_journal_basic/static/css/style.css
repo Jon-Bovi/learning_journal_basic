@@ -20,6 +20,32 @@ a {
     text-decoration: none;
 }
 
+input {
+    display: block;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.title_input {
+    width: 40vw;
+}
+
+#date {
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    display: block;
+    float: left;
+    min-width: 60vw;
+    min-height: 200px;
+    margin-bottom: 48px;
+}
+
 .header {
     padding-top: 10px;
     width: 100vw;
@@ -36,7 +62,7 @@ a {
 
 article {
     display: block;
-    background-color: #e0e5ed;
+    background-color: #e0eded;
     border-radius: 5px;
     border: 5px solid #ababbb;
     min-height: 136px;
@@ -66,17 +92,23 @@ article {
     margin-bottom: 20px;
 }
 
-h4, h6 {
+h4, h5, h6 {
     margin: 0;
+}
+
+h5 {
+    margin-top: 14px
 }
 
 h4 {
     color: #568;
     text-align: center;
+    transition: 10000ms;
 }
 
 a h4:hover {
-    color: #87c;
+    color: #d7c;
+    font-size: 8000%;
 }
 
 .header h3 {
@@ -99,17 +131,17 @@ article p {
     margin: 8px 0;
 }
 
-textarea {
-    min-width: 60vw;
-    min-height: 200px;
-}
-
 form {
     margin-top: 20px;
+    height: 340px;
 }
 
 #submit_button {
     background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 100px;
 }
 
 .latest article {
